@@ -8,7 +8,6 @@ const changeColor = () => {
     const color = colors[++i % colors.length]
     logo.style.boxShadow = `5px 5px ${color}`;
     headings.forEach(h => h.style.borderBottom = `5px solid ${color}`);
-    console.log('color changed')
 }
 
 logo.onmousedown = () => logo.style.boxShadow = 'none';
