@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f6fa;
+  color: #718093;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  margin: auto;
+  width: 700px;
+}
+.wrapper > * {
+  padding: 2em;
+  margin: 2em;
+}
+
+header, section {
+  background: white;
+  box-shadow: 5px 5px 10px rgba(47, 54, 64, 0.1);
+}
+
+footer {
+  text-align: center;
+  opacity: 0.5;
+}
+
+h1, h2, h3 {
+  color: #2f3640;
+  font-weight: 900;
+}
+
+a {
+  display: inline-block;
+  color: #40739e;
+  text-decoration: none;
+  border-bottom: 1px dotted #40739e;
+}
+a:hover {
+  border-bottom: 1px solid #40739e;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 30%;
+  box-shadow: 5px 5px #fbc531;
+  cursor: pointer;
+}
+header img:active {
+  top: 5px;
+  left: 5px;
+}
+
+section h2 {
+  display: inline-block;
+  border-bottom: 5px solid #fbc531;
+  font-size: 1.5em;
+}
+section .item, section .contact-item {
+  display: flex;
+  margin: 1.5em 0;
+}
+section .item {
+  justify-content: space-between;
+}
+section .item .descr {
+  width: 100%;
+  border-left: 1px solid #dcdde1;
+  padding-left: 1em;
+}
+section .item .descr .primary {
+  color: #2f3640;
+  font-weight: 700;
+}
+section .item .descr .secondary {
+  font-weight: 300;
+}
+section .item .descr .secondary .tertiary {
+  color: #aaa69d;
+}
+section .item .year {
+  width: 150px;
+  text-align: right;
+  color: #2f3640;
+  font-weight: 700;
+}
+section .contact-item {
+  justify-content: left;
+  align-items: center;
+}
+section .contact-item img {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .wrapper > * {
+    margin: 0;
+    break-inside: avoid-page;
+    box-shadow: none;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin-top: 8em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
