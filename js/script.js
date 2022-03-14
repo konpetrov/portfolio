@@ -10,5 +10,7 @@ const changeColor = () => {
     headings.forEach(h => h.style.borderBottom = `5px solid ${color}`);
 }
 
-logo.onmousedown = () => logo.style.boxShadow = 'none';
+const hideLogoBorder = () => logo.style.boxShadow = 'none';
+
+logo.onmousedown = hideLogoBorder;
 logo.onmouseup = changeColor;
